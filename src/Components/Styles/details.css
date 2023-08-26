@@ -1,0 +1,34 @@
+.case {
+  height: 700px;
+}
+img {
+  height: 700px;
+}
+.red {
+  color: red;
+}
+.details__div {
+  background-image: url("https://zomatoblog.com/wp-content/uploads/2023/04/blog-size-e1677043248892.png");
+  background-size: cover;
+  height: 600px;
+  background-position: center;
+}
+.open__carousal {
+  color: white;
+  font-weight: bold;
+  background-color: rgb(153, 150, 150, 0.5);
+  position: absolute;
+  bottom: 80px;
+  height: 150px;
+  line-height: 150px;
+  font-size: xx-large;
+  transition: 0.3s;
+}
+.open__carousal:hover {
+  cursor: pointer;
+  background-color: rgb(153, 150, 150, 0.9);
+  height: 600px;
+  text-align: center;
+  line-height: 600px;
+  font-size: 100px;
+}

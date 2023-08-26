@@ -1,0 +1,17 @@
+.myNav {
+  background-color: orangered;
+}
+.button {
+  color: white;
+  border: 3px solid white;
+  font-size: large;
+}
+.logo1 {
+  border-radius: 50%;
+  border: 2px solid white;
+  line-height: normal;
+}
+.lo {
+  text-decoration: none;
+  color: red;
+}

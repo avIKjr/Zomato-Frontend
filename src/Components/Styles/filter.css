@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  margin-right: 0;
+  color: rgba(4, 4, 59, 0.925);
+}
+.main {
+  width: 500px;
+}
+.check {
+  line-height: normal;
+  font-size: larger;
+}
+select {
+  width: 100%;
+}
+.right {
+  transition: 0.3s ease;
+}
+.right:hover {
+  transform: scale(1.01);
+}
+.img {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+}
+.newb {
+  border: none;
+}

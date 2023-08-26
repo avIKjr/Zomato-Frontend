@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+.bg1 {
+  background-image: url("https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png");
+  height: 630px;
+  background-size: cover;
+}
+.drop {
+  width: 345 !important;
+  align-items: center;
+}
+.black {
+  color: black;
+}
+.j {
+  height: 140px;
+  width: 140px;
+}
+.logo {
+  font-size: 30px;
+  background-color: white;
+  border: 1px solid gray;
+  color: red;
+  height: 70px;
+  width: 70px;
+  margin: auto;
+  transition: 0.3s ease;
+  font-weight: bolder;
+  line-height: 70px;
+}
+.logo:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.line {
+  color: black;
+  font-weight: bolder;
+}
+.div-main {
+  height: 550px;
+}
+.card:not(.xyz) {
+  transition: 0.3s ease;
+}
+.card:hover:not(.xyz) {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.newt {
+  text-decoration: none;
+}
+.newb {
+  border: none;
+}
+.margin {
+  margin: auto;
+}
+.heading {
+  font-weight: bolder;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.heading:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.search {
+  background-color: lightgray;
+  border: 2px solid rgb(95, 94, 94);
+  margin: auto;
+}
+.search:hover {
+  background-color: lightslategray;
+}
+.w {
+  width: 100%;
+}
+.m {
+  margin: auto;
+}
+.close-icon {
+  color: red;
+}
+.close-icon:hover {
+  color: rgb(145, 12, 12);
+}
+.item-logo {
+  height: 45px;
+  width: 45px;
+  padding: 5px;
+}
