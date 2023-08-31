@@ -27,7 +27,7 @@ const FilterPage = () => {
     if (locationId != undefined) {
       axios
         .get(
-          `http://localhost:8080/getRestaurantsByMealTypeID/${mealTypeId}/${Number(
+          `https://backend-eg87.onrender.com/getRestaurantsByMealTypeID/${mealTypeId}/${Number(
             locationId
           )}`
         ) //here we are getting the particular restaurant data by searching the restaurant by mealType and locationId
@@ -41,7 +41,7 @@ const FilterPage = () => {
         });
     } else {
       axios
-        .get(`http://localhost:8080/getRestaurantsByMealTypeID/${mealTypeId}`) //here we are getting the particular restaurant data by searching the restaurant by mealType
+        .get(`https://backend-eg87.onrender.com/getRestaurantsByMealTypeID/${mealTypeId}`) //here we are getting the particular restaurant data by searching the restaurant by mealType
         .then((response) => {
           // setMainFilterRestaurant(response.data);
           setFilterRestaurant(response.data);
@@ -52,7 +52,7 @@ const FilterPage = () => {
         });
     }
     axios
-      .get("http://localhost:8080/getAllLocations") //getting all locations from backend
+      .get("https://backend-eg87.onrender.com/getAllLocations") //getting all locations from backend
       .then((response) => {
         setLocation(response.data); //storing all locations in Location State
       })
