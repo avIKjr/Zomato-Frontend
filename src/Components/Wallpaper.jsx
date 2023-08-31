@@ -16,7 +16,7 @@ const Wallpaper = (props) => {
     // console.log(locationId);
 
     axios
-      .get(`http://localhost:8080/getRestaurantsByLocationTypeID/${locationId}`) //it is searching the restaurants based on location id
+      .get(`https://backend-eg87.onrender.com/getRestaurantsByLocationTypeID/${locationId}`) //it is searching the restaurants based on location id
       .then((response) => {
         setRestaurants(response.data); //after getting the the restaurant based on location id we are saving it in Restaurants state
         // console.log(response.data);
