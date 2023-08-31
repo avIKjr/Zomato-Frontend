@@ -10,7 +10,7 @@ const Home = () => {
   const [meal, setMeal] = useState([]); //it has all the mealTypes data
   useEffect(() => {
     axios
-      .get("http://localhost:8080/getAllLocations") //getting all locations from backend
+      .get("https://backend-eg87.onrender.com/getAllLocations") //getting all locations from backend
       .then((response) => {
         setLocation(response.data); //storing all locations in Location State
       })
@@ -18,7 +18,7 @@ const Home = () => {
         console.log(error);
       });
     axios
-      .get("http://localhost:8080/getAllMealTypes") //getting all mealTypes from backend
+      .get("https://backend-eg87.onrender.com/getAllMealTypes") //getting all mealTypes from backend
       .then((response) => {
         setMeal(response.data); //storing all meal-type data in Location State
       })
