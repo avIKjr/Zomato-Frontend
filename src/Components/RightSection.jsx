@@ -50,7 +50,7 @@ const RightSection = (props) => {
         {currentPost.map((item, index) => {
           return (
             <div
-              className=" container right shadow p-5 fs-4 sm-fs-5 md-fs-5 mb-5"
+              className=" container right shadow p-4 fs-4 sm-fs-5 md-fs-5 mb-5"
               key={index}
               onClick={() => selectingRestaurant(item._id)}
             >
@@ -65,7 +65,7 @@ const RightSection = (props) => {
                 </div>
               </div>
               <hr className="my-5" />
-              <div className="row  px-5  py-1">
+              <div className="row px-5">
                 <div className="col-2 mb-5 text-start">
                   <div className="text-muted">CUISINES</div>
                   <div className="text-muted fs-5">COST FOR TWO</div>
