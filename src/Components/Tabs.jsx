@@ -138,14 +138,14 @@ const DemoTab = (props) => {
                   return (
                     <div className="card mb-2 xyz rounded" alt="" key={index}>
                       <div className="row g-0">
-                        <div className="col-md-4 col-sm-4">
+                        <div className="col-4 col-md-4 col-sm-4">
                           <img
                             src={item.image_url}
                             className="img-fluid rounded"
                             alt="..."
                           />
                         </div>
-                        <div className="col-md-8 col-sm-8">
+                        <div className="col-8 col-md-8 col-sm-8 ">
                           <div className="card-body">
                             <h5 className="card-title">{item.name}</h5>
                             <p className="card-text">Price: ${item.price}</p>
