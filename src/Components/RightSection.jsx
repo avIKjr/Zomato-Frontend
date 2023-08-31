@@ -40,13 +40,13 @@ const RightSection = (props) => {
   // eslint-disable-next-line
   if (FilterRestaurant.length == 0) {
     return (
-      <div className=" col-8 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8 container text-center ">
+      <div className=" col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8 container text-center ">
         <h1> No results Found</h1>
       </div>
     );
   } else {
     return (
-      <div className=" col-8 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8 container text-end ">
+      <div className=" col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8 container text-end ">
         {currentPost.map((item, index) => {
           return (
             <div
