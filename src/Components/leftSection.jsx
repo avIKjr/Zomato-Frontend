@@ -236,13 +236,13 @@ const LeftSection = (props) => {
       });
   };
   return (
-    <div className="col-3 col-sm-11 col-md-11 col-lg-3 col-xl-3 col-xxl-3  container shadow py-3 mb-5 text-start ">
+    <div className="col-11 col-sm-11 col-md-11 col-lg-3 col-xl-3 col-xxl-3  container shadow py-3 mb-5 text-start ">
       <div className=" container  py-3">
         <form action="">
           {/* 1st section */}
           <div className="">
-            <div className="fs-2 sm-fs-3 md-fs-3 py-3 fw-bold">Filters</div>
-            <div className="fs-3 sm-fs-4 md-fs-4 py-3 fw-semibold text-muted">
+            <div className="fs-3 sm-fs-3 md-fs-3 py-3 fw-bold">Filters</div>
+            <div className="fs-4 sm-fs-4 md-fs-4 py-3 fw-semibold text-muted">
               Select location
             </div>
             <select
@@ -264,7 +264,7 @@ const LeftSection = (props) => {
               })}
             </select>
           </div>
-          <div className="fs-3 py-3 fw-semibold sm-fs-4 md-fs-4">Cuisine</div>
+          <div className="fs-4 py-3 fw-semibold sm-fs-4 md-fs-4">Cuisine</div>
           {/* 2nd section */}
           <div className="px-3 fs-4 sm-fs-4 md-fs-4 check">
             <input
@@ -309,7 +309,7 @@ const LeftSection = (props) => {
           </div>
           <br />
           {/* 3rd section */}
-          <div className="fs-3 py-1 sm-fs-4 md-fs-4 fw-semibold">
+          <div className="fs-4 py-1 sm-fs-4 md-fs-4 fw-semibold">
             Cost for two
           </div>
           <div className="px-3 fs-4 sm-fs-5 md-fs-5 check">
@@ -355,8 +355,8 @@ const LeftSection = (props) => {
           </div>
           <br />
           {/* 4th section */}
-          <div className="fs-3 sm-fs-4 md-fs-4 py-1 fw-semibold">Sort</div>
-          <div className="px-3 fs-4 sm-fs-5 md-fs-5 mb-4 check">
+          <div className="fs-4 sm-fs-4 md-fs-4 py-1 fw-semibold">Sort</div>
+          <div className="px-3 fs-5 sm-fs-5 md-fs-5 mb-4 check">
             <input
               type="radio"
               name="cost"
