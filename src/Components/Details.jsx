@@ -17,7 +17,7 @@ const Details = () => {
     ); //in this method we are getting the restaurant id which we passed in wallpaper component
 
     axios
-      .get(`http://localhost:8080/getRestaurantsById/${restaurants}`) //here we are getting the particular restaurant data by searching the restaurant by its id
+      .get(`https://backend-eg87.onrender.com/getRestaurantsById/${restaurants}`) //here we are getting the particular restaurant data by searching the restaurant by its id
       .then((response) => {
         setRestaurants(response.data);
         // console.log(response.data);
