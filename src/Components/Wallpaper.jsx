@@ -99,7 +99,7 @@ const Wallpaper = (props) => {
       {/* dropdown */}
       <div className="col-12 container my-5 py-5 text-center ">
         <div className="row justify-content-around">
-          <div className=" col-5 col-lg-5 col-md-5 col-sm-10 ">
+          <div className=" col-10 col-lg-5 col-md-5 col-sm-10 ">
             <select
               type="text"
               className="col-6 rounded-4 w py-3 text-muted text-center fs-3"
