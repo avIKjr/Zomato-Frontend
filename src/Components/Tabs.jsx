@@ -32,7 +32,7 @@ const DemoTab = (props) => {
     setSubTotal(0);
     axios
       .get(
-        `http://localhost:8080/getMenuItemsBasedOnRestaurantName/${restaurantData[0].name}`
+        `https://backend-eg87.onrender.com/getMenuItemsBasedOnRestaurantName/${restaurantData[0].name}`
       )
       .then((response) => {
         setMenuItems(response.data);
