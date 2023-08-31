@@ -66,11 +66,11 @@ const RightSection = (props) => {
               </div>
               <hr className="my-5" />
               <div className="row  px-5  py-1">
-                <div className="col-2 mb-5 ">
+                <div className="col-2 mb-5 text-start">
                   <div className="text-muted">CUISINES</div>
                   <div className="text-muted fs-5">COST FOR TWO</div>
                 </div>
-                <div className="col-10 px-5 a">
+                <div className="col-10 px-5 text-end">
                   {item.cuisine ? (
                     <div>{item.cuisine.map((value) => value.name + " ")}</div>
                   ) : null}
