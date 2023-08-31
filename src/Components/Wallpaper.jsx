@@ -121,7 +121,7 @@ const Wallpaper = (props) => {
             </select>
           </div>
           {/* Search bar */}
-          <div className=" col-5 col-lg-5 col-md-5 col-sm-10">
+          <div className=" col-10 col-xl-5 col-xxl-5 col-lg-5 col-md-5 col-sm-10">
             <input
               type="search"
               placeholder="Search for restaurants"
