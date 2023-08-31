@@ -17,8 +17,6 @@ img {
   color: white;
   font-weight: bold;
   background-color: rgb(153, 150, 150, 0.5);
-  position: absolute;
-  bottom: 80px;
   height: 150px;
   line-height: 150px;
   font-size: xx-large;
