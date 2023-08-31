@@ -21,7 +21,7 @@ const LeftSection = (props) => {
       //if there is no location id selected then it should filter the restaurant based on cuisine type
       axios
         .get(
-          `http://localhost:8080/getFilteredRestaurants/${mealTypeId}/${Number(
+          `https://backend-eg87.onrender.com/getFilteredRestaurants/${mealTypeId}/${Number(
             id
           )}`
         )
@@ -34,7 +34,7 @@ const LeftSection = (props) => {
     } else if (locationId) {
       axios
         .get(
-          `http://localhost:8080/getFilteredRestaurants/${mealTypeId}/${Number(
+          `https://backend-eg87.onrender.com/getFilteredRestaurants/${mealTypeId}/${Number(
             id
           )}/${Number(locationId)}`
         )
@@ -53,7 +53,7 @@ const LeftSection = (props) => {
     if (locationId && cuisineId) {
       axios
         .get(
-          `http://localhost:8080/getFilteredRestaurants/${mealTypeId}/${Number(
+          `https://backend-eg87.onrender.com/getFilteredRestaurants/${mealTypeId}/${Number(
             cuisineId
           )}/${Number(locationId)}/${Number(hCost)}/${Number(lCost)}`
         )
@@ -67,7 +67,7 @@ const LeftSection = (props) => {
     if (!locationId && !cuisineId) {
       axios
         .get(
-          `http://localhost:8080/getFilteredRestaurantss/${mealTypeId}/${Number(
+          `https://backend-eg87.onrender.com/getFilteredRestaurantss/${mealTypeId}/${Number(
             hCost
           )}/${Number(lCost)}`
         )
@@ -81,7 +81,7 @@ const LeftSection = (props) => {
     if (!locationId && cuisineId) {
       axios
         .get(
-          `http://localhost:8080/getFilteredRestaurantsc/${mealTypeId}/${Number(
+          `https://backend-eg87.onrender.com/getFilteredRestaurantsc/${mealTypeId}/${Number(
             cuisineId
           )}/${Number(hCost)}/${Number(lCost)}`
         )
@@ -95,7 +95,7 @@ const LeftSection = (props) => {
     if (locationId && !cuisineId) {
       axios
         .get(
-          `http://localhost:8080/getFilteredRestaurantsl/${mealTypeId}/${Number(
+          `https://backend-eg87.onrender.com/getFilteredRestaurantsl/${mealTypeId}/${Number(
             locationId
           )}/${Number(hCost)}/${Number(lCost)}`
         )
@@ -112,7 +112,7 @@ const LeftSection = (props) => {
     if (locationId && cuisineId && !lCost && !hCost) {
       axios
         .get(
-          `http://localhost:8080/getRestaurantsByMin_price/${mealTypeId}/${Number(
+          `https://backend-eg87.onrender.com/getRestaurantsByMin_price/${mealTypeId}/${Number(
             cuisineId
           )}/${Number(locationId)}/${Number(no)}`
         )
@@ -126,7 +126,7 @@ const LeftSection = (props) => {
     if (locationId && cuisineId && lCost && hCost) {
       axios
         .get(
-          `http://localhost:8080/getRestaurantsByMin_pricehlcl/${mealTypeId}/${Number(
+          `https://backend-eg87.onrender.com/getRestaurantsByMin_pricehlcl/${mealTypeId}/${Number(
             hCost
           )}/${Number(lCost)}/${Number(no)}/${Number(cuisineId)}/${Number(
             locationId
@@ -142,7 +142,7 @@ const LeftSection = (props) => {
     if (locationId && !cuisineId && !lCost && !hCost) {
       axios
         .get(
-          `http://localhost:8080/getRestaurantsByMin_pricel/${mealTypeId}/${Number(
+          `https://backend-eg87.onrender.com/getRestaurantsByMin_pricel/${mealTypeId}/${Number(
             no
           )}/${Number(locationId)}`
         )
@@ -156,7 +156,7 @@ const LeftSection = (props) => {
     if (!locationId && cuisineId && !lCost && !hCost) {
       axios
         .get(
-          `http://localhost:8080/getRestaurantsByMin_pricec/${mealTypeId}/${Number(
+          `https://backend-eg87.onrender.com/getRestaurantsByMin_pricec/${mealTypeId}/${Number(
             no
           )}/${Number(cuisineId)}`
         )
@@ -170,7 +170,7 @@ const LeftSection = (props) => {
     if (!locationId && cuisineId && lCost && hCost) {
       axios
         .get(
-          `http://localhost:8080/getRestaurantsByMin_pricehlc/${mealTypeId}/${Number(
+          `https://backend-eg87.onrender.com/getRestaurantsByMin_pricehlc/${mealTypeId}/${Number(
             hCost
           )}/${Number(lCost)}/${Number(no)}/${Number(cuisineId)}`
         )
@@ -184,7 +184,7 @@ const LeftSection = (props) => {
     if (locationId && !cuisineId && lCost && hCost) {
       axios
         .get(
-          `http://localhost:8080/getRestaurantsByMin_pricehll/${mealTypeId}/${Number(
+          `https://backend-eg87.onrender.com/getRestaurantsByMin_pricehll/${mealTypeId}/${Number(
             hCost
           )}/${Number(lCost)}/${Number(no)}/${Number(locationId)}`
         )
@@ -198,7 +198,7 @@ const LeftSection = (props) => {
     if (!locationId && !cuisineId && lCost && hCost) {
       axios
         .get(
-          `http://localhost:8080/getRestaurantsByMin_pricehl/${mealTypeId}/${Number(
+          `https://backend-eg87.onrender.com/getRestaurantsByMin_pricehl/${mealTypeId}/${Number(
             hCost
           )}/${Number(lCost)}/${Number(no)}`
         )
@@ -211,7 +211,7 @@ const LeftSection = (props) => {
     } else {
       axios
         .get(
-          `http://localhost:8080/getRestaurantsByMin_price/${mealTypeId}/${Number(
+          `https://backend-eg87.onrender.com/getRestaurantsByMin_price/${mealTypeId}/${Number(
             no
           )}`
         )
@@ -225,7 +225,7 @@ const LeftSection = (props) => {
   };
   const handleReset = () => {
     axios
-      .get(`http://localhost:8080/getRestaurantsByMealTypeID/${mealTypeId}`) //here we are getting the particular restaurant data by searching the restaurant by mealType
+      .get(`https://backend-eg87.onrender.com/getRestaurantsByMealTypeID/${mealTypeId}`) //here we are getting the particular restaurant data by searching the restaurant by mealType
       .then((response) => {
         // setMainFilterRestaurant(response.data);
         setFilterRestaurant(response.data);
