@@ -30,11 +30,12 @@ const Wallpaper = (props) => {
     let InputText = event.target.value; //this is getting the value of anything we write in the input box
     // console.log(InputText);
     setText(InputText);
+    if(InputText){
     const suggestion = Restaurants.filter(
-      (item) => item.name.toLowerCase().includes(Text.toLowerCase()) //this is filtering the Restaurants array and then checking if the restaurant includes the letter we write in input box, Which is stored in Text state
+      (item) => item.name.toLowerCase().startsWith(InputText.toLowerCase()) //this is filtering the Restaurants array and then checking if the restaurant includes the letter we write in input box, Which is stored in Text state
     );
     setSuggestions(suggestion); //now we are setting the suggestion of restaurant names in Suggestions state
-  };
+  };}
   // console.log(Suggestions);
   // console.log(Text);
 
