@@ -42,7 +42,7 @@ const DemoCarousel = (props) => {
         ariaHideApp={false}
       >
         <i
-          className="fa fa-times fa-2x close-icon text-end"
+          className="fa fa-times fa-2x close-icon text-center"
           onClick={closeModal}
         ></i>
         <Carousel
