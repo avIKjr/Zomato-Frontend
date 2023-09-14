@@ -15,7 +15,7 @@ const DemoCarousel = (props) => {
       marginRight: "-50%",
       transform: "translate(-50%, -50%)",
       background: "#F8F9F9",
-      width: "90%",
+      width: "80%",
       borderRadius: "10px",
       marginInline: "1px",
     },
@@ -42,7 +42,7 @@ const DemoCarousel = (props) => {
         ariaHideApp={false}
       >
         <i
-          className="fa fa-times fa-2x close-icon text-center"
+          className="fa fa-times fa-2x close-icon text-end"
           onClick={closeModal}
         ></i>
         <Carousel
